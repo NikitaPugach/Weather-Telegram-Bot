@@ -11,9 +11,12 @@ import org.telegram.telegrambots.exceptions.TelegramApiException;
 import org.telegram.telegrambots.exceptions.TelegramApiRequestException;
 //import sun.jvm.hotspot.debugger.remote.ppc64.RemotePPC64Thread;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class Bot extends TelegramLongPollingBot {
+public class Bot extends TelegramLongPollingBot implements Serializable {
+
+    static final long serialVersionUID = 0L;
 
     private ArrayList<UserInfo> info = new ArrayList<>();
     private ArrayList<Long> id = new ArrayList<>();

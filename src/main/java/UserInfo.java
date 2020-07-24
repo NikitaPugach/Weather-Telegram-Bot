@@ -1,6 +1,10 @@
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class UserInfo {
+public class UserInfo implements Serializable {
+
+    static final long serialVersionUID = 0L;
+
     ArrayList<String> cities;
     boolean newCityFlag;
     boolean removeCityFlag;
